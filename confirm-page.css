@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#main-container{
+    margin-top: 60px;
+    min-height: 80vh;
+    padding-bottom: 8%;
+}
+#content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+}
+#tick-wrapper{
+    width: 200px;
+    height: 200px;
+    background-color: #49d049;
+    border-radius: 50%;
+    padding: 40px;
+    animation: order-placed 1s;
+}
+#tick-wrapper>img{
+    width: 100%;
+}
+#main-heading{
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+#section-heading{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+@keyframes order-placed{
+    0%{
+        transform: scale(0.8,0.8);
+    }
+    50%{
+        transform: scale(1.2,1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+@media(max-width:768px){    
+    #tick-wrapper{
+        width: 150px;
+        height: 150px;
+    }
+    #main-heading{
+        font-size: 32px;
+    }
+}
+@media(max-width:510px){    
+    #tick-wrapper{
+        width: 120px;
+        height: 120px;
+    }
+    #main-heading{
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    #section-heading{
+        font-size: 14px;
+    }
+}
